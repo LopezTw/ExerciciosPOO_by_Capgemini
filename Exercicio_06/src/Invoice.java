@@ -2,13 +2,14 @@ public class Invoice {
     private int numItemFaturado;
     private String descricaoItem;
     private int qtdComprada;
-    private double precoUnitario;
+    private float precoUnitario;
 
-    public Invoice(int numItemFaturado, String descricaoItem, int qtdComprada, double precoUnitario) {
-        this.numItemFaturado = numItemFaturado;
-        this.descricaoItem = descricaoItem;
-        this.qtdComprada = qtdComprada;
-        this.precoUnitario = precoUnitario;
+    public Invoice(int numItemFaturado, String descricaoItem, int qtdComprada, float precoUnitario) {
+        this.setNumItemFaturado(numItemFaturado);
+        this.setDescricaoItem(descricaoItem);
+        this.setQtdComprada(qtdComprada);
+        this.setPrecoUnitario(precoUnitario);
+
     }
 
     public void Output(){
@@ -47,19 +48,23 @@ public class Invoice {
     }
 
     public void setQtdComprada(int qtdComprada) {
-        if(this.qtdComprada < 0){
-            setQtdComprada(0);
+        if(qtdComprada < 0){
+            this.qtdComprada = 0;
+        } else{
+            this.qtdComprada = qtdComprada;
         }
         
     }
 
-    public double getPrecoUnitario() {
+    public float getPrecoUnitario() {
         return precoUnitario;
     }
 
-    public void setPrecoUnitario(double precoUnitario) {
-        if(this.precoUnitario < 0){
-            setPrecoUnitario(0);
+    public void setPrecoUnitario(float precoUnitario) {   
+        if(precoUnitario < 0){
+            this.precoUnitario = 0;
+        } else{
+            this.precoUnitario = precoUnitario;
         }
     }
 
