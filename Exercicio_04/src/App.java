@@ -8,7 +8,7 @@ prédio (os elevadores sempre começam no térreo e vazio);
 b. Entra: para acrescentar uma pessoa no elevador (só deve acrescentar se ainda houver espaço);
 c. Sai: para remover uma pessoa do elevador (só deve remover se houver alguém dentro dele);
 d. Sobe: para subir um andar (não deve subir se já estiver no último andar);
-e. Desce: para descer um andar (não deve descer se já estiver no térreo); 
+e. Desce: para descer um andar (não deve descer se já estiver no térreo);
 
 */
 
