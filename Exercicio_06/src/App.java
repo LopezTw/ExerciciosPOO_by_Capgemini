@@ -12,6 +12,7 @@ Forneça os métodos getters e setters para cada variável de instância. Além 
 chamado getInvoiceAmount que calcula o valor da fatura (isso é, multiplica a quantidade pelo preço por 
 item) e depois retorna o valor como um double. Escreva um aplicativo de teste que demonstra as 
 capacidades da classe Invoice.
+
 */
 
 public class App {
